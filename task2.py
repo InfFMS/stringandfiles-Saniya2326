@@ -6,5 +6,9 @@
 
 with open('task2.txt', encoding="utf-8") as f:
     s = f.read()
+    print('замены:',s.count('Python'))
+    s = s.replace('Python','Питон')
     print(s)
-    if 
+
+file = open ('newtext.txt', 'a+', encoding="utf-8", )
+file.write(s)
