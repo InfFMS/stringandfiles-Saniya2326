@@ -17,5 +17,5 @@ with open('task5.txt', encoding="utf-8") as f:
             b = s[i]
             a=len(s[i])
 
-print('Самое длинное слово:', b)
+print('Самое длинное слово:', b[:-1])
 print('Его длина:',a-1)
