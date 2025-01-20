@@ -6,15 +6,22 @@
 # слово2: количество
 #
 # Убедитесь, что слова записаны в алфавитном порядке.
+
+
+
 a = 0
-j = set()
+
+
 with open('task3.txt', encoding="utf-8") as f:
     s = f.read()
 
+    s = s.replace(",", "")
+    s = s.replace('.', '')
 
     m = s.lower()
 
     b = m.split()
+    p = []
     for i in range (0, len(b)):
         a = 0
         for x in range (0,len(b)):
@@ -22,6 +29,11 @@ with open('task3.txt', encoding="utf-8") as f:
             if b[i]==b[x]:
                 a = a+1
 
-            j.add((b[i], a))
+        p.append(str(b[i])  +' ' + str(a))
 
-print (j)
+
+    p = sorted(p)
+    print(p)
+
+
+

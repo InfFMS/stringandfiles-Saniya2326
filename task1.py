@@ -14,7 +14,7 @@ with open('task1.txt', encoding="utf-8") as f:
     k = len(s)
     l = s.count('\n') + 1
     m = s.split()
-    p = len (m)+1-s.count('—')
-    print(m)
-    print (l, k, p)
+    p = len (m)-s.count('—')
+
+    print ('строки:',l, 'символы:',k, 'слова:', p)
 
